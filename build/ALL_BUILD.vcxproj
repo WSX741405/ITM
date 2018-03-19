@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F28E3542-2AA8-3490-B09F-FC7075A62D59}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\MitLab\Desktop\InfiniTAM\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/MitLab/Desktop/InfiniTAM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Software\CMake\bin\cmake.exe -HC:/Users/MitLab/Desktop/InfiniTAM -BC:/Users/MitLab/Desktop/InfiniTAM/build --check-stamp-file C:/Users/MitLab/Desktop/InfiniTAM/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/MitLab/Desktop/InfiniTAM/CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeSystem.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeCCompiler.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeCXXCompiler.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeRCCompiler.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\MitLab\Desktop\InfiniTAM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/MitLab/Desktop/InfiniTAM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Software\CMake\bin\cmake.exe -HC:/Users/MitLab/Desktop/InfiniTAM -BC:/Users/MitLab/Desktop/InfiniTAM/build --check-stamp-file C:/Users/MitLab/Desktop/InfiniTAM/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/MitLab/Desktop/InfiniTAM/CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeSystem.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeCCompiler.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeCXXCompiler.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeRCCompiler.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\MitLab\Desktop\InfiniTAM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/MitLab/Desktop/InfiniTAM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Software\CMake\bin\cmake.exe -HC:/Users/MitLab/Desktop/InfiniTAM -BC:/Users/MitLab/Desktop/InfiniTAM/build --check-stamp-file C:/Users/MitLab/Desktop/InfiniTAM/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/MitLab/Desktop/InfiniTAM/CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeSystem.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeCCompiler.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeCXXCompiler.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeRCCompiler.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\MitLab\Desktop\InfiniTAM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/MitLab/Desktop/InfiniTAM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Software\CMake\bin\cmake.exe -HC:/Users/MitLab/Desktop/InfiniTAM -BC:/Users/MitLab/Desktop/InfiniTAM/build --check-stamp-file C:/Users/MitLab/Desktop/InfiniTAM/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/MitLab/Desktop/InfiniTAM/CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeSystem.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeCCompiler.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeCXXCompiler.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\3.9.1\CMakeRCCompiler.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Software\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\Software\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\MitLab\Desktop\InfiniTAM\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\MitLab\Desktop\InfiniTAM\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\MitLab\Desktop\InfiniTAM\build\ZERO_CHECK.vcxproj">
+      <Project>{A8222F3C-01CE-3220-8C4A-AA81E927E01C}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MitLab\Desktop\InfiniTAM\build\FernRelocLib\FernRelocLib.vcxproj">
+      <Project>{715F2E93-E7F9-394D-B779-E8180FF8003C}</Project>
+      <Name>FernRelocLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MitLab\Desktop\InfiniTAM\build\ITMLib\ITMLib.vcxproj">
+      <Project>{A01D7451-11CF-38E2-8EFE-ACB3B817DCF0}</Project>
+      <Name>ITMLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MitLab\Desktop\InfiniTAM\build\Apps\InfiniTAM\InfiniTAM.vcxproj">
+      <Project>{1E818788-29FA-3791-A330-B70861CAC146}</Project>
+      <Name>InfiniTAM</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MitLab\Desktop\InfiniTAM\build\Apps\InfiniTAM_cli\InfiniTAM_cli.vcxproj">
+      <Project>{134E4FC1-F503-3646-B281-B1B266BB0C01}</Project>
+      <Name>InfiniTAM_cli</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MitLab\Desktop\InfiniTAM\build\InputSource\InputSource.vcxproj">
+      <Project>{63F5B35B-6401-3F28-B650-4AEFC381729F}</Project>
+      <Name>InputSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MitLab\Desktop\InfiniTAM\build\MiniSlamGraphLib\MiniSlamGraphLib.vcxproj">
+      <Project>{B0A4A334-DB1D-3FA7-93ED-FC2D2B3117EE}</Project>
+      <Name>MiniSlamGraphLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MitLab\Desktop\InfiniTAM\build\ORUtils\ORUtils.vcxproj">
+      <Project>{9036908D-5EEC-39D9-A337-6CC6F178D91E}</Project>
+      <Name>ORUtils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\InputSource\FFMPEGReader.h" />
+    <ClInclude Include="..\..\InputSource\FFMPEGWriter.h" />
+    <ClInclude Include="..\..\InputSource\IdleImageSourceEngine.h" />
+    <ClInclude Include="..\..\InputSource\ImageSourceEngine.h" />
+    <ClInclude Include="..\..\InputSource\IMUSourceEngine.h" />
+    <ClInclude Include="..\..\InputSource\Kinect2Engine.h" />
+    <ClInclude Include="..\..\InputSource\LibUVCEngine.h" />
+    <ClInclude Include="..\..\InputSource\OpenNIEngine.h" />
+    <ClInclude Include="..\..\InputSource\PicoFlexxEngine.h" />
+    <ClInclude Include="..\..\InputSource\RealSenseEngine.h" />
+    <ClInclude Include="..\..\InputSource\CompositeImageSourceEngine.h" />
+    <ClInclude Include="..\..\InputSource\RealSense2Engine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\InputSource\FFMPEGWriter.cpp" />
+    <ClCompile Include="..\..\InputSource\IdleImageSourceEngine.cpp" />
+    <ClCompile Include="..\..\InputSource\ImageSourceEngine.cpp" />
+    <ClCompile Include="..\..\InputSource\IMUSourceEngine.cpp" />
+    <ClCompile Include="..\..\InputSource\Kinect2Engine.cpp" />
+    <ClCompile Include="..\..\InputSource\LibUVCEngine.cpp" />
+    <ClCompile Include="..\..\InputSource\OpenNIEngine.cpp" />
+    <ClCompile Include="..\..\InputSource\PicoFlexxEngine.cpp" />
+    <ClCompile Include="..\..\InputSource\RealSenseEngine.cpp" />
+    <ClCompile Include="..\..\InputSource\CompositeImageSourceEngine.cpp" />
+    <ClCompile Include="..\..\InputSource\FFMPEGReader.cpp" />
+    <ClCompile Include="..\..\InputSource\RealSense2Engine.cpp" />
+  </ItemGroup>
+</Project>

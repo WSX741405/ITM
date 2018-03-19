@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+C:/Users/MitLab/Desktop/InfiniTAM/ORUtils/CMakeLists.txt
+C:/Users/MitLab/Desktop/InfiniTAM/cmake/UseCUDA.cmake
+D:/Software/CMake/share/cmake-3.9/Modules/FindCUDA.cmake
+D:/Software/CMake/share/cmake-3.9/Modules/FindPackageHandleStandardArgs.cmake
+D:/Software/CMake/share/cmake-3.9/Modules/FindPackageMessage.cmake
+D:/Software/CMake/share/cmake-3.9/Modules/FindCUDA/select_compute_arch.cmake
+C:/Users/MitLab/Desktop/InfiniTAM/cmake/UseOpenMP.cmake
+C:/Users/MitLab/Desktop/InfiniTAM/cmake/UsePNG.cmake
+C:/Users/MitLab/Desktop/InfiniTAM/cmake/SetCUDALibTarget.cmake
+C:/Users/MitLab/Desktop/InfiniTAM/cmake/Flags.cmake
