@@ -1,4 +1,4 @@
-// Copyright 2014-2017 Oxford University Innovation Limited and the authors of InfiniTAM
+// Copyright 2014-2017 Oxford University Innovation Limited and the authors of ITM
 
 #include "RealSense2Engine.h"
 
@@ -145,7 +145,7 @@ void RealSense2Engine::getImages(ITMUChar4Image *rgbImage, ITMShortImage *rawDep
 	static_assert(2 == depth_pixel_size, "sizeof(depth pixel) must equal 2");
 	auto depth_frame = reinterpret_cast<const uint16_t *>(depth.get_data());
 	
-	// setup infinitam frames
+	// setup ITM frames
 	short *rawDepth = rawDepthImage->GetData(MEMORYDEVICE_CPU);
 	Vector4u *rgb = rgbImage->GetData(MEMORYDEVICE_CPU);
 	

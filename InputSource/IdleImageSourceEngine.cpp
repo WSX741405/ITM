@@ -1,4 +1,4 @@
-// Copyright 2014-2018 Oxford University Innovation Limited and the authors of InfiniTAM
+// Copyright 2014-2018 Oxford University Innovation Limited and the authors of ITM
 
 #include "IdleImageSourceEngine.h"
 

@@ -1,4 +1,4 @@
-// Copyright 2014-2017 Oxford University Innovation Limited and the authors of InfiniTAM
+// Copyright 2014-2017 Oxford University Innovation Limited and the authors of ITM
 
 #include "ITMBasicSurfelEngine.h"
 
@@ -298,14 +298,14 @@ ITMBasicSurfelEngine<TSurfel>::ToSurfelImageType(GetImageType getImageType)
 {
 	switch (getImageType)
 	{
-		case InfiniTAM_IMAGE_COLOUR_FROM_VOLUME:
-		case InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_VOLUME:
+		case ITM_IMAGE_COLOUR_FROM_VOLUME:
+		case ITM_IMAGE_FREECAMERA_COLOUR_FROM_VOLUME:
 			return ITMSurfelVisualisationEngine<TSurfel>::RENDER_COLOUR;
-		case InfiniTAM_IMAGE_COLOUR_FROM_NORMAL:
-		case InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_NORMAL:
+		case ITM_IMAGE_COLOUR_FROM_NORMAL:
+		case ITM_IMAGE_FREECAMERA_COLOUR_FROM_NORMAL:
 			return ITMSurfelVisualisationEngine<TSurfel>::RENDER_NORMAL;
-		case InfiniTAM_IMAGE_COLOUR_FROM_CONFIDENCE:
-		case InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_CONFIDENCE:
+		case ITM_IMAGE_COLOUR_FROM_CONFIDENCE:
+		case ITM_IMAGE_FREECAMERA_COLOUR_FROM_CONFIDENCE:
 			return ITMSurfelVisualisationEngine<TSurfel>::RENDER_CONFIDENCE;
 		default:
 			return ITMSurfelVisualisationEngine<TSurfel>::RENDER_LAMBERTIAN;
@@ -321,21 +321,21 @@ void ITMBasicSurfelEngine<TSurfel>::GetImage(ITMUChar4Image *out, GetImageType g
 
 	switch (getImageType)
 	{
-	case ITMBasicSurfelEngine::InfiniTAM_IMAGE_ORIGINAL_RGB:
+	case ITMBasicSurfelEngine::ITM_IMAGE_ORIGINAL_RGB:
 		out->ChangeDims(view->rgb->noDims);
 		if (settings->deviceType == ITMLibSettings::DEVICE_CUDA) 
 			out->SetFrom(view->rgb, ORUtils::MemoryBlock<Vector4u>::CUDA_TO_CPU);
 		else out->SetFrom(view->rgb, ORUtils::MemoryBlock<Vector4u>::CPU_TO_CPU);
 		break;
-	case ITMBasicSurfelEngine::InfiniTAM_IMAGE_ORIGINAL_DEPTH:
+	case ITMBasicSurfelEngine::ITM_IMAGE_ORIGINAL_DEPTH:
 		out->ChangeDims(view->depth->noDims);
 		if (settings->deviceType == ITMLibSettings::DEVICE_CUDA) view->depth->UpdateHostFromDevice();
 		IITMVisualisationEngine::DepthToUchar4(out, view->depth);
 		break;
-	case ITMBasicSurfelEngine::InfiniTAM_IMAGE_SCENERAYCAST:
-	case ITMBasicSurfelEngine::InfiniTAM_IMAGE_COLOUR_FROM_VOLUME:
-	case ITMBasicSurfelEngine::InfiniTAM_IMAGE_COLOUR_FROM_NORMAL:
-	case ITMBasicSurfelEngine::InfiniTAM_IMAGE_COLOUR_FROM_CONFIDENCE:
+	case ITMBasicSurfelEngine::ITM_IMAGE_SCENERAYCAST:
+	case ITMBasicSurfelEngine::ITM_IMAGE_COLOUR_FROM_VOLUME:
+	case ITMBasicSurfelEngine::ITM_IMAGE_COLOUR_FROM_NORMAL:
+	case ITMBasicSurfelEngine::ITM_IMAGE_COLOUR_FROM_CONFIDENCE:
 		{
 			const bool useRadii = true;
 			surfelVisualisationEngine->FindSurface(surfelScene, trackingState->pose_d, &view->calib.intrinsics_d, useRadii, USR_DONOTRENDER, surfelRenderState_live);
@@ -343,10 +343,10 @@ void ITMBasicSurfelEngine<TSurfel>::GetImage(ITMUChar4Image *out, GetImageType g
 			out->UpdateHostFromDevice();
 			break;
 		}
-	case ITMBasicSurfelEngine::InfiniTAM_IMAGE_FREECAMERA_SHADED:
-	case ITMBasicSurfelEngine::InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_VOLUME:
-	case ITMBasicSurfelEngine::InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_NORMAL:
-	case ITMBasicSurfelEngine::InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_CONFIDENCE:
+	case ITMBasicSurfelEngine::ITM_IMAGE_FREECAMERA_SHADED:
+	case ITMBasicSurfelEngine::ITM_IMAGE_FREECAMERA_COLOUR_FROM_VOLUME:
+	case ITMBasicSurfelEngine::ITM_IMAGE_FREECAMERA_COLOUR_FROM_NORMAL:
+	case ITMBasicSurfelEngine::ITM_IMAGE_FREECAMERA_COLOUR_FROM_CONFIDENCE:
 	{
 		if (!surfelRenderState_freeview) surfelRenderState_freeview = new ITMSurfelRenderState(view->depth->noDims, surfelScene->GetParams().supersamplingFactor);
 		const bool useRadii = true;
@@ -355,7 +355,7 @@ void ITMBasicSurfelEngine<TSurfel>::GetImage(ITMUChar4Image *out, GetImageType g
 		out->UpdateHostFromDevice();
 		break;
 	}
-	case ITMMainEngine::InfiniTAM_IMAGE_UNKNOWN:
+	case ITMMainEngine::ITM_IMAGE_UNKNOWN:
 		break;
 	}
 }

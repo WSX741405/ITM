@@ -1,4 +1,4 @@
-// Copyright 2014-2017 Oxford University Innovation Limited and the authors of InfiniTAM
+// Copyright 2014-2017 Oxford University Innovation Limited and the authors of ITM
 
 #pragma once
 
@@ -7,7 +7,7 @@
 #include "../Utils/ITMLibSettings.h"
 
 /** \mainpage
-    This is the API reference documentation for InfiniTAM. For a general
+    This is the API reference documentation for ITM. For a general
     overview additional documentation can be found in the included Technical
     Report.
 
@@ -49,17 +49,17 @@ namespace ITMLib
 	public:
 		enum GetImageType
 		{
-			InfiniTAM_IMAGE_ORIGINAL_RGB,
-			InfiniTAM_IMAGE_ORIGINAL_DEPTH,
-			InfiniTAM_IMAGE_SCENERAYCAST,
-			InfiniTAM_IMAGE_COLOUR_FROM_VOLUME,
-			InfiniTAM_IMAGE_COLOUR_FROM_NORMAL,
-			InfiniTAM_IMAGE_COLOUR_FROM_CONFIDENCE,
-			InfiniTAM_IMAGE_FREECAMERA_SHADED,
-			InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_VOLUME,
-			InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_NORMAL,
-			InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_CONFIDENCE,
-			InfiniTAM_IMAGE_UNKNOWN
+			ITM_IMAGE_ORIGINAL_RGB,
+			ITM_IMAGE_ORIGINAL_DEPTH,
+			ITM_IMAGE_SCENERAYCAST,
+			ITM_IMAGE_COLOUR_FROM_VOLUME,
+			ITM_IMAGE_COLOUR_FROM_NORMAL,
+			ITM_IMAGE_COLOUR_FROM_CONFIDENCE,
+			ITM_IMAGE_FREECAMERA_SHADED,
+			ITM_IMAGE_FREECAMERA_COLOUR_FROM_VOLUME,
+			ITM_IMAGE_FREECAMERA_COLOUR_FROM_NORMAL,
+			ITM_IMAGE_FREECAMERA_COLOUR_FROM_CONFIDENCE,
+			ITM_IMAGE_UNKNOWN
 		};
 
 		/// Gives access to the current input frame

@@ -1,4 +1,4 @@
-// Copyright 2014-2017 Oxford University Innovation Limited and the authors of InfiniTAM
+// Copyright 2014-2017 Oxford University Innovation Limited and the authors of ITM
 
 #include "Kinect2Engine.h"
 
@@ -121,7 +121,7 @@ void Kinect2Engine::getImages(ITMUChar4Image *rgbImage, ITMShortImage *rawDepthI
 	//}
 	//else memset(depth, 0, out->depth->dataSize * sizeof(short));
 
-	//out->inputImageType = ITMView::InfiniTAM_FLOAT_DEPTH_IMAGE;
+	//out->inputImageType = ITMView::ITM_FLOAT_DEPTH_IMAGE;
 
 	return /*true*/;
 }

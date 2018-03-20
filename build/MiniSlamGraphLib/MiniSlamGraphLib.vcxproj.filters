@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\GraphEdge.cpp" />
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\GraphEdgeSE3.cpp" />
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\LevenbergMarquardtMethod.cpp" />
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\MatrixWrapper.cpp" />
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\PoseGraph.cpp" />
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\SlamGraph.cpp" />
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\SlamGraphErrorFunction.cpp" />
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\QuaternionHelpers.cpp" />
+    <ClCompile Include="..\..\MiniSlamGraphLib\GraphEdge.cpp" />
+    <ClCompile Include="..\..\MiniSlamGraphLib\GraphEdgeSE3.cpp" />
+    <ClCompile Include="..\..\MiniSlamGraphLib\LevenbergMarquardtMethod.cpp" />
+    <ClCompile Include="..\..\MiniSlamGraphLib\MatrixWrapper.cpp" />
+    <ClCompile Include="..\..\MiniSlamGraphLib\PoseGraph.cpp" />
+    <ClCompile Include="..\..\MiniSlamGraphLib\QuaternionHelpers.cpp" />
+    <ClCompile Include="..\..\MiniSlamGraphLib\SlamGraph.cpp" />
+    <ClCompile Include="..\..\MiniSlamGraphLib\SlamGraphErrorFunction.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\GraphEdge.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\GraphEdgeSE3.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\GraphNode.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\GraphNodeSE3.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\LevenbergMarquardtMethod.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\Matrix_CSparse.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\MatrixWrapper.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\ParameterIndex.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\PoseGraph.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\QuaternionHelpers.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\SlamGraph.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\SlamGraphErrorFunction.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\SparseBlockMatrix.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\SparseRegularBlockMatrix.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\MiniSlamGraphLib\VariableLengthVector.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\GraphEdge.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\GraphEdgeSE3.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\GraphNode.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\GraphNodeSE3.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\LevenbergMarquardtMethod.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\Matrix_CSparse.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\MatrixWrapper.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\ParameterIndex.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\PoseGraph.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\QuaternionHelpers.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\SlamGraph.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\SlamGraphErrorFunction.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\SparseBlockMatrix.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\SparseRegularBlockMatrix.h" />
+    <ClInclude Include="..\..\MiniSlamGraphLib\VariableLengthVector.h" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

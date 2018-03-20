@@ -1,4 +1,4 @@
-// Copyright 2017 Akos Maroy and the authors of InfiniTAM
+// Copyright 2017 Akos Maroy and the authors of ITM
 
 #include "PicoFlexxEngine.h"
 

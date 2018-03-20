@@ -1,561 +1,561 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\CPUInstantiations.cpp" />
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\LowLevel\ITMLowLevelEngineFactory.cpp">
-      <Filter>Engines\LowLevel</Filter>
+    <ClCompile Include="..\..\ITMLib\CPUInstantiations.cpp" />
+    <ClCompile Include="..\..\ITMLib\Utils\ITMLibSettings.cpp">
+      <Filter>Utils</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\LowLevel\CPU\ITMLowLevelEngine_CPU.cpp">
-      <Filter>Engines\LowLevel\CPU</Filter>
+    <ClCompile Include="..\..\ITMLib\Trackers\Interface\ITMColorTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\MultiScene\ITMActiveMapManager.cpp">
-      <Filter>Engines\MultiScene</Filter>
+    <ClCompile Include="..\..\ITMLib\Trackers\Interface\ITMDepthTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\MultiScene\ITMGlobalAdjustmentEngine.cpp">
-      <Filter>Engines\MultiScene</Filter>
+    <ClCompile Include="..\..\ITMLib\Trackers\Interface\ITMExtendedTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\ViewBuilding\ITMViewBuilderFactory.cpp">
-      <Filter>Engines\ViewBuilding</Filter>
+    <ClCompile Include="..\..\ITMLib\Trackers\Interface\ITMFileBasedTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\ViewBuilding\CPU\ITMViewBuilder_CPU.cpp">
-      <Filter>Engines\ViewBuilding\CPU</Filter>
+    <ClCompile Include="..\..\ITMLib\Trackers\Interface\ITMForceFailTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\Interface\ITMVisualisationEngine.cpp">
-      <Filter>Engines\Visualisation\Interface</Filter>
+    <ClCompile Include="..\..\ITMLib\Trackers\Interface\ITMIMUTracker.cpp">
+      <Filter>Trackers\Interface</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Camera\ITMCalibIO.cpp">
-      <Filter>Objects\Camera</Filter>
+    <ClCompile Include="..\..\ITMLib\Trackers\CPU\ITMColorTracker_CPU.cpp">
+      <Filter>Trackers\CPU</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\RenderStates\ITMSurfelRenderState.cpp">
+    <ClCompile Include="..\..\ITMLib\Trackers\CPU\ITMDepthTracker_CPU.cpp">
+      <Filter>Trackers\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ITMLib\Trackers\CPU\ITMExtendedTracker_CPU.cpp">
+      <Filter>Trackers\CPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ITMLib\Objects\RenderStates\ITMSurfelRenderState.cpp">
       <Filter>Objects\RenderStates</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CPU\ITMColorTracker_CPU.cpp">
-      <Filter>Trackers\CPU</Filter>
+    <ClCompile Include="..\..\ITMLib\Objects\Camera\ITMCalibIO.cpp">
+      <Filter>Objects\Camera</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CPU\ITMDepthTracker_CPU.cpp">
-      <Filter>Trackers\CPU</Filter>
+    <ClCompile Include="..\..\ITMLib\Engines\Visualisation\Interface\ITMVisualisationEngine.cpp">
+      <Filter>Engines\Visualisation\Interface</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CPU\ITMExtendedTracker_CPU.cpp">
-      <Filter>Trackers\CPU</Filter>
+    <ClCompile Include="..\..\ITMLib\Engines\ViewBuilding\ITMViewBuilderFactory.cpp">
+      <Filter>Engines\ViewBuilding</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMColorTracker.cpp">
-      <Filter>Trackers\Interface</Filter>
+    <ClCompile Include="..\..\ITMLib\Engines\ViewBuilding\CPU\ITMViewBuilder_CPU.cpp">
+      <Filter>Engines\ViewBuilding\CPU</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMDepthTracker.cpp">
-      <Filter>Trackers\Interface</Filter>
+    <ClCompile Include="..\..\ITMLib\Engines\MultiScene\ITMGlobalAdjustmentEngine.cpp">
+      <Filter>Engines\MultiScene</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMExtendedTracker.cpp">
-      <Filter>Trackers\Interface</Filter>
+    <ClCompile Include="..\..\ITMLib\Engines\MultiScene\ITMActiveMapManager.cpp">
+      <Filter>Engines\MultiScene</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMFileBasedTracker.cpp">
-      <Filter>Trackers\Interface</Filter>
+    <ClCompile Include="..\..\ITMLib\Engines\LowLevel\ITMLowLevelEngineFactory.cpp">
+      <Filter>Engines\LowLevel</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMForceFailTracker.cpp">
-      <Filter>Trackers\Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMIMUTracker.cpp">
-      <Filter>Trackers\Interface</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Utils\ITMLibSettings.cpp">
-      <Filter>Utils</Filter>
+    <ClCompile Include="..\..\ITMLib\Engines\LowLevel\CPU\ITMLowLevelEngine_CPU.cpp">
+      <Filter>Engines\LowLevel\CPU</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\ITMLibDefines.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMBasicEngine.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="..\..\ITMLib\ITMLibDefines.h" />
+    <ClInclude Include="..\..\ITMLib\Utils\ITMSurfelSceneParams.h">
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMBasicSurfelEngine.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="..\..\ITMLib\Utils\ITMSceneParams.h">
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMDenseMapper.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="..\..\ITMLib\Utils\ITMProjectionUtils.h">
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMDenseSurfelMapper.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="..\..\ITMLib\Utils\ITMPixelUtils.h">
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMMainEngine.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="..\..\ITMLib\Utils\ITMMemoryBlockTypes.h">
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMMultiEngine.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="..\..\ITMLib\Utils\ITMMath.h">
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMTrackingController.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="..\..\ITMLib\Utils\ITMLibSettings.h">
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\LowLevel\ITMLowLevelEngineFactory.h">
-      <Filter>Engines\LowLevel</Filter>
+    <ClInclude Include="..\..\ITMLib\Utils\ITMImageTypes.h">
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\LowLevel\CPU\ITMLowLevelEngine_CPU.h">
-      <Filter>Engines\LowLevel\CPU</Filter>
+    <ClInclude Include="..\..\ITMLib\Utils\ITMCUDAUtils.h">
+      <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\LowLevel\CUDA\ITMLowLevelEngine_CUDA.h">
-      <Filter>Engines\LowLevel\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\LowLevel\Interface\ITMLowLevelEngine.h">
-      <Filter>Engines\LowLevel\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\LowLevel\Shared\ITMLowLevelEngine_Shared.h">
-      <Filter>Engines\LowLevel\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\ITMMeshingEngineFactory.h">
-      <Filter>Engines\Meshing</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\ITMMultiMeshingEngineFactory.h">
-      <Filter>Engines\Meshing</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\CPU\ITMMeshingEngine_CPU.h">
-      <Filter>Engines\Meshing\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\CPU\ITMMultiMeshingEngine_CPU.h">
-      <Filter>Engines\Meshing\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\CUDA\ITMMeshingEngine_CUDA.h">
-      <Filter>Engines\Meshing\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\CUDA\ITMMultiMeshingEngine_CUDA.h">
-      <Filter>Engines\Meshing\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\Interface\ITMMeshingEngine.h">
-      <Filter>Engines\Meshing\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\Interface\ITMMultiMeshingEngine.h">
-      <Filter>Engines\Meshing\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\Shared\ITMMeshingEngine_Shared.h">
-      <Filter>Engines\Meshing\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\Shared\ITMMultiMeshingEngine_Shared.h">
-      <Filter>Engines\Meshing\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\MultiScene\ITMActiveMapManager.h">
-      <Filter>Engines\MultiScene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\MultiScene\ITMGlobalAdjustmentEngine.h">
-      <Filter>Engines\MultiScene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\MultiScene\ITMMapGraphManager.h">
-      <Filter>Engines\MultiScene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\ITMSceneReconstructionEngineFactory.h">
-      <Filter>Engines\Reconstruction</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\ITMSurfelSceneReconstructionEngineFactory.h">
-      <Filter>Engines\Reconstruction</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\CPU\ITMSceneReconstructionEngine_CPU.h">
-      <Filter>Engines\Reconstruction\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\CPU\ITMSurfelSceneReconstructionEngine_CPU.h">
-      <Filter>Engines\Reconstruction\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\CUDA\ITMSceneReconstructionEngine_CUDA.h">
-      <Filter>Engines\Reconstruction\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\CUDA\ITMSurfelSceneReconstructionEngine_CUDA.h">
-      <Filter>Engines\Reconstruction\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\Interface\ITMSceneReconstructionEngine.h">
-      <Filter>Engines\Reconstruction\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\Interface\ITMSurfelSceneReconstructionEngine.h">
-      <Filter>Engines\Reconstruction\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\Shared\ITMSceneReconstructionEngine_Shared.h">
-      <Filter>Engines\Reconstruction\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\Shared\ITMSurfelSceneReconstructionEngine_Shared.h">
-      <Filter>Engines\Reconstruction\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Swapping\ITMSwappingEngineFactory.h">
-      <Filter>Engines\Swapping</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Swapping\CPU\ITMSwappingEngine_CPU.h">
-      <Filter>Engines\Swapping\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Swapping\CUDA\ITMSwappingEngine_CUDA.h">
-      <Filter>Engines\Swapping\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Swapping\Interface\ITMSwappingEngine.h">
-      <Filter>Engines\Swapping\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Swapping\Shared\ITMSwappingEngine_Shared.h">
-      <Filter>Engines\Swapping\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\ViewBuilding\ITMViewBuilderFactory.h">
-      <Filter>Engines\ViewBuilding</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\ViewBuilding\CPU\ITMViewBuilder_CPU.h">
-      <Filter>Engines\ViewBuilding\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\ViewBuilding\CUDA\ITMViewBuilder_CUDA.h">
-      <Filter>Engines\ViewBuilding\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\ViewBuilding\Interface\ITMViewBuilder.h">
-      <Filter>Engines\ViewBuilding\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\ViewBuilding\Shared\ITMViewBuilder_Shared.h">
-      <Filter>Engines\ViewBuilding\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\ITMMultiVisualisationEngineFactory.h">
-      <Filter>Engines\Visualisation</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\ITMSurfelVisualisationEngineFactory.h">
-      <Filter>Engines\Visualisation</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\ITMVisualisationEngineFactory.h">
-      <Filter>Engines\Visualisation</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CPU\ITMMultiVisualisationEngine_CPU.h">
-      <Filter>Engines\Visualisation\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CPU\ITMSurfelVisualisationEngine_CPU.h">
-      <Filter>Engines\Visualisation\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CPU\ITMVisualisationEngine_CPU.h">
-      <Filter>Engines\Visualisation\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CUDA\ITMMultiVisualisationEngine_CUDA.h">
-      <Filter>Engines\Visualisation\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CUDA\ITMSurfelVisualisationEngine_CUDA.h">
-      <Filter>Engines\Visualisation\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CUDA\ITMVisualisationEngine_CUDA.h">
-      <Filter>Engines\Visualisation\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CUDA\ITMVisualisationHelpers_CUDA.h">
-      <Filter>Engines\Visualisation\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\Interface\ITMMultiVisualisationEngine.h">
-      <Filter>Engines\Visualisation\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\Interface\ITMSurfelVisualisationEngine.h">
-      <Filter>Engines\Visualisation\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\Interface\ITMVisualisationEngine.h">
-      <Filter>Engines\Visualisation\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\Shared\ITMSurfelVisualisationEngine_Settings.h">
-      <Filter>Engines\Visualisation\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\Shared\ITMSurfelVisualisationEngine_Shared.h">
-      <Filter>Engines\Visualisation\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\Shared\ITMVisualisationEngine_Shared.h">
-      <Filter>Engines\Visualisation\Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Camera\ITMCalibIO.h">
-      <Filter>Objects\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Camera\ITMDisparityCalib.h">
-      <Filter>Objects\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Camera\ITMExtrinsics.h">
-      <Filter>Objects\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Camera\ITMIntrinsics.h">
-      <Filter>Objects\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Camera\ITMRGBDCalib.h">
-      <Filter>Objects\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Meshing\ITMMesh.h">
-      <Filter>Objects\Meshing</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Misc\ITMIMUCalibrator.h">
-      <Filter>Objects\Misc</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Misc\ITMIMUMeasurement.h">
-      <Filter>Objects\Misc</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Misc\ITMPointCloud.h">
-      <Filter>Objects\Misc</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\RenderStates\ITMRenderState.h">
-      <Filter>Objects\RenderStates</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\RenderStates\ITMRenderStateMultiScene.h">
-      <Filter>Objects\RenderStates</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\RenderStates\ITMRenderState_VH.h">
-      <Filter>Objects\RenderStates</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\RenderStates\ITMRenderStateFactory.h">
-      <Filter>Objects\RenderStates</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\RenderStates\ITMSurfelRenderState.h">
-      <Filter>Objects\RenderStates</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Scene\ITMGlobalCache.h">
-      <Filter>Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Scene\ITMLocalMap.h">
-      <Filter>Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Scene\ITMLocalVBA.h">
-      <Filter>Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Scene\ITMMultiSceneAccess.h">
-      <Filter>Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Scene\ITMPlainVoxelArray.h">
-      <Filter>Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Scene\ITMRepresentationAccess.h">
-      <Filter>Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Scene\ITMScene.h">
-      <Filter>Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Scene\ITMSurfelScene.h">
-      <Filter>Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Scene\ITMSurfelTypes.h">
-      <Filter>Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Scene\ITMVoxelBlockHash.h">
-      <Filter>Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Scene\ITMVoxelTypes.h">
-      <Filter>Objects\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Tracking\ITMDepthHierarchyLevel.h">
-      <Filter>Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Tracking\ITMImageHierarchy.h">
-      <Filter>Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Tracking\ITMIntensityHierarchyLevel.h">
-      <Filter>Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Tracking\ITMRGBHierarchyLevel.h">
-      <Filter>Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Tracking\ITMSceneHierarchyLevel.h">
-      <Filter>Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Tracking\ITMTemplatedHierarchyLevel.h">
-      <Filter>Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Tracking\ITMTrackingState.h">
-      <Filter>Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Tracking\ITMViewHierarchyLevel.h">
-      <Filter>Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Tracking\TrackerIterationType.h">
-      <Filter>Objects\Tracking</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Views\ITMView.h">
-      <Filter>Objects\Views</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Objects\Views\ITMViewIMU.h">
-      <Filter>Objects\Views</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\ITMTrackerFactory.h">
+    <ClInclude Include="..\..\ITMLib\Trackers\ITMTrackerFactory.h">
       <Filter>Trackers</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CPU\ITMColorTracker_CPU.h">
-      <Filter>Trackers\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CPU\ITMDepthTracker_CPU.h">
-      <Filter>Trackers\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CPU\ITMExtendedTracker_CPU.h">
-      <Filter>Trackers\CPU</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CUDA\ITMColorTracker_CUDA.h">
-      <Filter>Trackers\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CUDA\ITMDepthTracker_CUDA.h">
-      <Filter>Trackers\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CUDA\ITMExtendedTracker_CUDA.h">
-      <Filter>Trackers\CUDA</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMColorTracker.h">
-      <Filter>Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMCompositeTracker.h">
-      <Filter>Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMDepthTracker.h">
-      <Filter>Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMExtendedTracker.h">
-      <Filter>Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMFileBasedTracker.h">
-      <Filter>Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMForceFailTracker.h">
-      <Filter>Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMIMUTracker.h">
-      <Filter>Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Interface\ITMTracker.h">
-      <Filter>Trackers\Interface</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Shared\ITMColorTracker_Shared.h">
+    <ClInclude Include="..\..\ITMLib\Trackers\Shared\ITMColorTracker_Shared.h">
       <Filter>Trackers\Shared</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Shared\ITMDepthTracker_Shared.h">
+    <ClInclude Include="..\..\ITMLib\Trackers\Shared\ITMDepthTracker_Shared.h">
       <Filter>Trackers\Shared</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\Shared\ITMExtendedTracker_Shared.h">
+    <ClInclude Include="..\..\ITMLib\Trackers\Shared\ITMExtendedTracker_Shared.h">
       <Filter>Trackers\Shared</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Utils\ITMCUDAUtils.h">
-      <Filter>Utils</Filter>
+    <ClInclude Include="..\..\ITMLib\Trackers\Interface\ITMColorTracker.h">
+      <Filter>Trackers\Interface</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Utils\ITMImageTypes.h">
-      <Filter>Utils</Filter>
+    <ClInclude Include="..\..\ITMLib\Trackers\Interface\ITMCompositeTracker.h">
+      <Filter>Trackers\Interface</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Utils\ITMLibSettings.h">
-      <Filter>Utils</Filter>
+    <ClInclude Include="..\..\ITMLib\Trackers\Interface\ITMDepthTracker.h">
+      <Filter>Trackers\Interface</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Utils\ITMMath.h">
-      <Filter>Utils</Filter>
+    <ClInclude Include="..\..\ITMLib\Trackers\Interface\ITMExtendedTracker.h">
+      <Filter>Trackers\Interface</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Utils\ITMMemoryBlockTypes.h">
-      <Filter>Utils</Filter>
+    <ClInclude Include="..\..\ITMLib\Trackers\Interface\ITMFileBasedTracker.h">
+      <Filter>Trackers\Interface</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Utils\ITMPixelUtils.h">
-      <Filter>Utils</Filter>
+    <ClInclude Include="..\..\ITMLib\Trackers\Interface\ITMForceFailTracker.h">
+      <Filter>Trackers\Interface</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Utils\ITMProjectionUtils.h">
-      <Filter>Utils</Filter>
+    <ClInclude Include="..\..\ITMLib\Trackers\Interface\ITMIMUTracker.h">
+      <Filter>Trackers\Interface</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Utils\ITMSceneParams.h">
-      <Filter>Utils</Filter>
+    <ClInclude Include="..\..\ITMLib\Trackers\Interface\ITMTracker.h">
+      <Filter>Trackers\Interface</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Utils\ITMSurfelSceneParams.h">
-      <Filter>Utils</Filter>
+    <ClInclude Include="..\..\ITMLib\Trackers\CUDA\ITMColorTracker_CUDA.h">
+      <Filter>Trackers\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Trackers\CUDA\ITMDepthTracker_CUDA.h">
+      <Filter>Trackers\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Trackers\CUDA\ITMExtendedTracker_CUDA.h">
+      <Filter>Trackers\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Trackers\CPU\ITMColorTracker_CPU.h">
+      <Filter>Trackers\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Trackers\CPU\ITMDepthTracker_CPU.h">
+      <Filter>Trackers\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Trackers\CPU\ITMExtendedTracker_CPU.h">
+      <Filter>Trackers\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Views\ITMView.h">
+      <Filter>Objects\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Views\ITMViewIMU.h">
+      <Filter>Objects\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Tracking\ITMDepthHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Tracking\ITMImageHierarchy.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Tracking\ITMIntensityHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Tracking\ITMRGBHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Tracking\ITMSceneHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Tracking\ITMTemplatedHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Tracking\ITMTrackingState.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Tracking\ITMViewHierarchyLevel.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Tracking\TrackerIterationType.h">
+      <Filter>Objects\Tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Scene\ITMGlobalCache.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Scene\ITMLocalMap.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Scene\ITMLocalVBA.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Scene\ITMMultiSceneAccess.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Scene\ITMPlainVoxelArray.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Scene\ITMRepresentationAccess.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Scene\ITMScene.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Scene\ITMSurfelScene.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Scene\ITMSurfelTypes.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Scene\ITMVoxelBlockHash.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Scene\ITMVoxelTypes.h">
+      <Filter>Objects\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\RenderStates\ITMRenderState.h">
+      <Filter>Objects\RenderStates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\RenderStates\ITMRenderState_VH.h">
+      <Filter>Objects\RenderStates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\RenderStates\ITMRenderStateFactory.h">
+      <Filter>Objects\RenderStates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\RenderStates\ITMRenderStateMultiScene.h">
+      <Filter>Objects\RenderStates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\RenderStates\ITMSurfelRenderState.h">
+      <Filter>Objects\RenderStates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Misc\ITMPointCloud.h">
+      <Filter>Objects\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Misc\ITMIMUMeasurement.h">
+      <Filter>Objects\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Misc\ITMIMUCalibrator.h">
+      <Filter>Objects\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Meshing\ITMMesh.h">
+      <Filter>Objects\Meshing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Camera\ITMCalibIO.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Camera\ITMDisparityCalib.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Camera\ITMExtrinsics.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Camera\ITMIntrinsics.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Objects\Camera\ITMRGBDCalib.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\ITMSurfelVisualisationEngineFactory.h">
+      <Filter>Engines\Visualisation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\ITMMultiVisualisationEngineFactory.h">
+      <Filter>Engines\Visualisation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\ITMVisualisationEngineFactory.h">
+      <Filter>Engines\Visualisation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\Shared\ITMSurfelVisualisationEngine_Settings.h">
+      <Filter>Engines\Visualisation\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\Shared\ITMSurfelVisualisationEngine_Shared.h">
+      <Filter>Engines\Visualisation\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\Shared\ITMVisualisationEngine_Shared.h">
+      <Filter>Engines\Visualisation\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\Interface\ITMMultiVisualisationEngine.h">
+      <Filter>Engines\Visualisation\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\Interface\ITMSurfelVisualisationEngine.h">
+      <Filter>Engines\Visualisation\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\Interface\ITMVisualisationEngine.h">
+      <Filter>Engines\Visualisation\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\CUDA\ITMMultiVisualisationEngine_CUDA.h">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\CUDA\ITMSurfelVisualisationEngine_CUDA.h">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\CUDA\ITMVisualisationEngine_CUDA.h">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\CUDA\ITMVisualisationHelpers_CUDA.h">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\CPU\ITMMultiVisualisationEngine_CPU.h">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\CPU\ITMSurfelVisualisationEngine_CPU.h">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Visualisation\CPU\ITMVisualisationEngine_CPU.h">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\ViewBuilding\ITMViewBuilderFactory.h">
+      <Filter>Engines\ViewBuilding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\ViewBuilding\Shared\ITMViewBuilder_Shared.h">
+      <Filter>Engines\ViewBuilding\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\ViewBuilding\Interface\ITMViewBuilder.h">
+      <Filter>Engines\ViewBuilding\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\ViewBuilding\CUDA\ITMViewBuilder_CUDA.h">
+      <Filter>Engines\ViewBuilding\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\ViewBuilding\CPU\ITMViewBuilder_CPU.h">
+      <Filter>Engines\ViewBuilding\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Swapping\ITMSwappingEngineFactory.h">
+      <Filter>Engines\Swapping</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Swapping\Shared\ITMSwappingEngine_Shared.h">
+      <Filter>Engines\Swapping\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Swapping\Interface\ITMSwappingEngine.h">
+      <Filter>Engines\Swapping\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Swapping\CUDA\ITMSwappingEngine_CUDA.h">
+      <Filter>Engines\Swapping\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Swapping\CPU\ITMSwappingEngine_CPU.h">
+      <Filter>Engines\Swapping\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Reconstruction\ITMSurfelSceneReconstructionEngineFactory.h">
+      <Filter>Engines\Reconstruction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Reconstruction\ITMSceneReconstructionEngineFactory.h">
+      <Filter>Engines\Reconstruction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Reconstruction\Shared\ITMSurfelSceneReconstructionEngine_Shared.h">
+      <Filter>Engines\Reconstruction\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Reconstruction\Shared\ITMSceneReconstructionEngine_Shared.h">
+      <Filter>Engines\Reconstruction\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Reconstruction\Interface\ITMSurfelSceneReconstructionEngine.h">
+      <Filter>Engines\Reconstruction\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Reconstruction\Interface\ITMSceneReconstructionEngine.h">
+      <Filter>Engines\Reconstruction\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Reconstruction\CUDA\ITMSurfelSceneReconstructionEngine_CUDA.h">
+      <Filter>Engines\Reconstruction\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Reconstruction\CUDA\ITMSceneReconstructionEngine_CUDA.h">
+      <Filter>Engines\Reconstruction\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Reconstruction\CPU\ITMSurfelSceneReconstructionEngine_CPU.h">
+      <Filter>Engines\Reconstruction\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Reconstruction\CPU\ITMSceneReconstructionEngine_CPU.h">
+      <Filter>Engines\Reconstruction\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\MultiScene\ITMMapGraphManager.h">
+      <Filter>Engines\MultiScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\MultiScene\ITMGlobalAdjustmentEngine.h">
+      <Filter>Engines\MultiScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\MultiScene\ITMActiveMapManager.h">
+      <Filter>Engines\MultiScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Meshing\ITMMultiMeshingEngineFactory.h">
+      <Filter>Engines\Meshing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Meshing\ITMMeshingEngineFactory.h">
+      <Filter>Engines\Meshing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Meshing\Shared\ITMMultiMeshingEngine_Shared.h">
+      <Filter>Engines\Meshing\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Meshing\Shared\ITMMeshingEngine_Shared.h">
+      <Filter>Engines\Meshing\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Meshing\Interface\ITMMultiMeshingEngine.h">
+      <Filter>Engines\Meshing\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Meshing\Interface\ITMMeshingEngine.h">
+      <Filter>Engines\Meshing\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Meshing\CUDA\ITMMultiMeshingEngine_CUDA.h">
+      <Filter>Engines\Meshing\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Meshing\CUDA\ITMMeshingEngine_CUDA.h">
+      <Filter>Engines\Meshing\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Meshing\CPU\ITMMultiMeshingEngine_CPU.h">
+      <Filter>Engines\Meshing\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\Meshing\CPU\ITMMeshingEngine_CPU.h">
+      <Filter>Engines\Meshing\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\LowLevel\ITMLowLevelEngineFactory.h">
+      <Filter>Engines\LowLevel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\LowLevel\Shared\ITMLowLevelEngine_Shared.h">
+      <Filter>Engines\LowLevel\Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\LowLevel\Interface\ITMLowLevelEngine.h">
+      <Filter>Engines\LowLevel\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\LowLevel\CUDA\ITMLowLevelEngine_CUDA.h">
+      <Filter>Engines\LowLevel\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Engines\LowLevel\CPU\ITMLowLevelEngine_CPU.h">
+      <Filter>Engines\LowLevel\CPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Core\ITMTrackingController.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Core\ITMMultiEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Core\ITMMainEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Core\ITMDenseSurfelMapper.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Core\ITMDenseMapper.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Core\ITMBasicSurfelEngine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ITMLib\Core\ITMBasicEngine.h">
+      <Filter>Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\CUDAInstantiations.cu" />
-    <CustomBuild Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\LowLevel\CUDA\ITMLowLevelEngine_CUDA.cu">
-      <Filter>Engines\LowLevel\CUDA</Filter>
+    <CustomBuild Include="..\..\ITMLib\CUDAInstantiations.cu" />
+    <CustomBuild Include="..\..\ITMLib\Trackers\CUDA\ITMColorTracker_CUDA.cu">
+      <Filter>Trackers\CUDA</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\ViewBuilding\CUDA\ITMViewBuilder_CUDA.cu">
+    <CustomBuild Include="..\..\ITMLib\Trackers\CUDA\ITMDepthTracker_CUDA.cu">
+      <Filter>Trackers\CUDA</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\ITMLib\Trackers\CUDA\ITMExtendedTracker_CUDA.cu">
+      <Filter>Trackers\CUDA</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\ITMLib\Engines\Visualisation\CUDA\ITMVisualisationHelpers_CUDA.cu">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\ITMLib\Engines\ViewBuilding\CUDA\ITMViewBuilder_CUDA.cu">
       <Filter>Engines\ViewBuilding\CUDA</Filter>
     </CustomBuild>
-    <CustomBuild Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CUDA\ITMVisualisationHelpers_CUDA.cu">
-      <Filter>Engines\Visualisation\CUDA</Filter>
-    </CustomBuild>
-    <CustomBuild Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CUDA\ITMColorTracker_CUDA.cu">
-      <Filter>Trackers\CUDA</Filter>
-    </CustomBuild>
-    <CustomBuild Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CUDA\ITMDepthTracker_CUDA.cu">
-      <Filter>Trackers\CUDA</Filter>
-    </CustomBuild>
-    <CustomBuild Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Trackers\CUDA\ITMExtendedTracker_CUDA.cu">
-      <Filter>Trackers\CUDA</Filter>
+    <CustomBuild Include="..\..\ITMLib\Engines\LowLevel\CUDA\ITMLowLevelEngine_CUDA.cu">
+      <Filter>Engines\LowLevel\CUDA</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMBasicEngine.tpp">
-      <Filter>Core</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMBasicSurfelEngine.tpp">
-      <Filter>Core</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMDenseMapper.tpp">
-      <Filter>Core</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMDenseSurfelMapper.tpp">
-      <Filter>Core</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Core\ITMMultiEngine.tpp">
-      <Filter>Core</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\CPU\ITMMeshingEngine_CPU.tpp">
-      <Filter>Engines\Meshing\CPU</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\CPU\ITMMultiMeshingEngine_CPU.tpp">
-      <Filter>Engines\Meshing\CPU</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\CUDA\ITMMeshingEngine_CUDA.tcu">
-      <Filter>Engines\Meshing\CUDA</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Meshing\CUDA\ITMMultiMeshingEngine_CUDA.tcu">
-      <Filter>Engines\Meshing\CUDA</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\MultiScene\ITMMapGraphManager.tpp">
-      <Filter>Engines\MultiScene</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\ITMSurfelSceneReconstructionEngineFactory.tpp">
-      <Filter>Engines\Reconstruction</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\CPU\ITMSceneReconstructionEngine_CPU.tpp">
-      <Filter>Engines\Reconstruction\CPU</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\CPU\ITMSurfelSceneReconstructionEngine_CPU.tpp">
-      <Filter>Engines\Reconstruction\CPU</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\CUDA\ITMSceneReconstructionEngine_CUDA.tcu">
-      <Filter>Engines\Reconstruction\CUDA</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\CUDA\ITMSurfelSceneReconstructionEngine_CUDA.tcu">
-      <Filter>Engines\Reconstruction\CUDA</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Reconstruction\Interface\ITMSurfelSceneReconstructionEngine.tpp">
-      <Filter>Engines\Reconstruction\Interface</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Swapping\CPU\ITMSwappingEngine_CPU.tpp">
-      <Filter>Engines\Swapping\CPU</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Swapping\CUDA\ITMSwappingEngine_CUDA.tcu">
-      <Filter>Engines\Swapping\CUDA</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\ITMSurfelVisualisationEngineFactory.tpp">
+    <None Include="..\..\ITMLib\Engines\Visualisation\ITMSurfelVisualisationEngineFactory.tpp">
       <Filter>Engines\Visualisation</Filter>
     </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CPU\ITMMultiVisualisationEngine_CPU.tpp">
-      <Filter>Engines\Visualisation\CPU</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CPU\ITMSurfelVisualisationEngine_CPU.tpp">
-      <Filter>Engines\Visualisation\CPU</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CPU\ITMVisualisationEngine_CPU.tpp">
-      <Filter>Engines\Visualisation\CPU</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CUDA\ITMMultiVisualisationEngine_CUDA.tcu">
-      <Filter>Engines\Visualisation\CUDA</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CUDA\ITMSurfelVisualisationEngine_CUDA.tcu">
-      <Filter>Engines\Visualisation\CUDA</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\CUDA\ITMVisualisationEngine_CUDA.tcu">
-      <Filter>Engines\Visualisation\CUDA</Filter>
-    </None>
-    <None Include="C:\Users\MitLab\Desktop\InfiniTAM\ITMLib\Engines\Visualisation\Interface\ITMSurfelVisualisationEngine.tpp">
+    <None Include="..\..\ITMLib\Engines\Visualisation\Interface\ITMSurfelVisualisationEngine.tpp">
       <Filter>Engines\Visualisation\Interface</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Visualisation\CUDA\ITMMultiVisualisationEngine_CUDA.tcu">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Visualisation\CUDA\ITMSurfelVisualisationEngine_CUDA.tcu">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Visualisation\CUDA\ITMVisualisationEngine_CUDA.tcu">
+      <Filter>Engines\Visualisation\CUDA</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Visualisation\CPU\ITMMultiVisualisationEngine_CPU.tpp">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Visualisation\CPU\ITMSurfelVisualisationEngine_CPU.tpp">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Visualisation\CPU\ITMVisualisationEngine_CPU.tpp">
+      <Filter>Engines\Visualisation\CPU</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Swapping\CUDA\ITMSwappingEngine_CUDA.tcu">
+      <Filter>Engines\Swapping\CUDA</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Swapping\CPU\ITMSwappingEngine_CPU.tpp">
+      <Filter>Engines\Swapping\CPU</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Reconstruction\ITMSurfelSceneReconstructionEngineFactory.tpp">
+      <Filter>Engines\Reconstruction</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Reconstruction\Interface\ITMSurfelSceneReconstructionEngine.tpp">
+      <Filter>Engines\Reconstruction\Interface</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Reconstruction\CUDA\ITMSurfelSceneReconstructionEngine_CUDA.tcu">
+      <Filter>Engines\Reconstruction\CUDA</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Reconstruction\CUDA\ITMSceneReconstructionEngine_CUDA.tcu">
+      <Filter>Engines\Reconstruction\CUDA</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Reconstruction\CPU\ITMSurfelSceneReconstructionEngine_CPU.tpp">
+      <Filter>Engines\Reconstruction\CPU</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Reconstruction\CPU\ITMSceneReconstructionEngine_CPU.tpp">
+      <Filter>Engines\Reconstruction\CPU</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\MultiScene\ITMMapGraphManager.tpp">
+      <Filter>Engines\MultiScene</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Meshing\CUDA\ITMMultiMeshingEngine_CUDA.tcu">
+      <Filter>Engines\Meshing\CUDA</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Meshing\CUDA\ITMMeshingEngine_CUDA.tcu">
+      <Filter>Engines\Meshing\CUDA</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Meshing\CPU\ITMMultiMeshingEngine_CPU.tpp">
+      <Filter>Engines\Meshing\CPU</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Engines\Meshing\CPU\ITMMeshingEngine_CPU.tpp">
+      <Filter>Engines\Meshing\CPU</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Core\ITMMultiEngine.tpp">
+      <Filter>Core</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Core\ITMDenseSurfelMapper.tpp">
+      <Filter>Core</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Core\ITMDenseMapper.tpp">
+      <Filter>Core</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Core\ITMBasicSurfelEngine.tpp">
+      <Filter>Core</Filter>
+    </None>
+    <None Include="..\..\ITMLib\Core\ITMBasicEngine.tpp">
+      <Filter>Core</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Object Include="C:\Users\MitLab\Desktop\InfiniTAM\build\ITMLib\CMakeFiles\ITMLib.dir\$(Configuration)\ITMLib_generated_CUDAInstantiations.cu.obj">
+    <Object Include="CMakeFiles\ITMLib.dir\Debug\ITMLib_generated_CUDAInstantiations.cu.obj">
       <Filter>Object Files</Filter>
     </Object>
-    <Object Include="C:\Users\MitLab\Desktop\InfiniTAM\build\ITMLib\CMakeFiles\ITMLib.dir\Engines\LowLevel\CUDA\$(Configuration)\ITMLib_generated_ITMLowLevelEngine_CUDA.cu.obj">
+    <Object Include="CMakeFiles\ITMLib.dir\Trackers\CUDA\Debug\ITMLib_generated_ITMColorTracker_CUDA.cu.obj">
       <Filter>Object Files</Filter>
     </Object>
-    <Object Include="C:\Users\MitLab\Desktop\InfiniTAM\build\ITMLib\CMakeFiles\ITMLib.dir\Engines\ViewBuilding\CUDA\$(Configuration)\ITMLib_generated_ITMViewBuilder_CUDA.cu.obj">
+    <Object Include="CMakeFiles\ITMLib.dir\Trackers\CUDA\Debug\ITMLib_generated_ITMExtendedTracker_CUDA.cu.obj">
       <Filter>Object Files</Filter>
     </Object>
-    <Object Include="C:\Users\MitLab\Desktop\InfiniTAM\build\ITMLib\CMakeFiles\ITMLib.dir\Engines\Visualisation\CUDA\$(Configuration)\ITMLib_generated_ITMVisualisationHelpers_CUDA.cu.obj">
+    <Object Include="CMakeFiles\ITMLib.dir\Engines\LowLevel\CUDA\Debug\ITMLib_generated_ITMLowLevelEngine_CUDA.cu.obj">
       <Filter>Object Files</Filter>
     </Object>
-    <Object Include="C:\Users\MitLab\Desktop\InfiniTAM\build\ITMLib\CMakeFiles\ITMLib.dir\Trackers\CUDA\$(Configuration)\ITMLib_generated_ITMColorTracker_CUDA.cu.obj">
+    <Object Include="CMakeFiles\ITMLib.dir\Engines\ViewBuilding\CUDA\Debug\ITMLib_generated_ITMViewBuilder_CUDA.cu.obj">
       <Filter>Object Files</Filter>
     </Object>
-    <Object Include="C:\Users\MitLab\Desktop\InfiniTAM\build\ITMLib\CMakeFiles\ITMLib.dir\Trackers\CUDA\$(Configuration)\ITMLib_generated_ITMDepthTracker_CUDA.cu.obj">
+    <Object Include="CMakeFiles\ITMLib.dir\Engines\Visualisation\CUDA\Debug\ITMLib_generated_ITMVisualisationHelpers_CUDA.cu.obj">
       <Filter>Object Files</Filter>
     </Object>
-    <Object Include="C:\Users\MitLab\Desktop\InfiniTAM\build\ITMLib\CMakeFiles\ITMLib.dir\Trackers\CUDA\$(Configuration)\ITMLib_generated_ITMExtendedTracker_CUDA.cu.obj">
+    <Object Include="CMakeFiles\ITMLib.dir\Trackers\CUDA\Debug\ITMLib_generated_ITMDepthTracker_CUDA.cu.obj">
       <Filter>Object Files</Filter>
     </Object>
   </ItemGroup>

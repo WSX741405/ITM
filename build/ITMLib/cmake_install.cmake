@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/MitLab/Desktop/InfiniTAM/ITMLib
+# Install script for directory: C:/Users/MitLab/Desktop/ITM/ITMLib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

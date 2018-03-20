@@ -1,4 +1,4 @@
-// Copyright 2014-2017 Oxford University Innovation Limited and the authors of InfiniTAM
+// Copyright 2014-2017 Oxford University Innovation Limited and the authors of ITM
 
 #include "RealSenseEngine.h"
 
@@ -92,6 +92,7 @@ RealSenseEngine::~RealSenseEngine()
 
 void RealSenseEngine::getImages(ITMUChar4Image *rgbImage, ITMShortImage *rawDepthImage)
 {
+	if (!dataAvailable)	return;
 	dataAvailable = false;
 
 	// get frames
@@ -99,7 +100,7 @@ void RealSenseEngine::getImages(ITMUChar4Image *rgbImage, ITMShortImage *rawDept
 	const uint16_t * depth_frame = reinterpret_cast<const uint16_t *>(data->dev->get_frame_data(rs::stream::depth));
 	const uint8_t * color_frame = reinterpret_cast<const uint8_t*>(data->dev->get_frame_data(colourStream));
 
-	// setup infinitam frames
+	// setup ITM frames
 	short *rawDepth = rawDepthImage->GetData(MEMORYDEVICE_CPU);
 	Vector4u *rgb = rgbImage->GetData(MEMORYDEVICE_CPU);
 
@@ -107,7 +108,29 @@ void RealSenseEngine::getImages(ITMUChar4Image *rgbImage, ITMShortImage *rawDept
 	rawDepthImage->Clear();
 	rgbImage->Clear();
 
-	for (int y = 0; y < noDims.y; y++) for (int x = 0; x < noDims.x; x++) rawDepth[x + y * noDims.x] = *depth_frame++;
+	if(background_frame == NULL)
+		for (int y = 0; y < noDims.y; y++) for (int x = 0; x < noDims.x; x++) rawDepth[x + y * noDims.x] = *depth_frame++;
+	else
+	{
+		for (int y = 0; y < noDims.y; y++)
+		{
+			for (int x = 0; x < noDims.x; x++)
+			{
+				int pointId = x + y * noDims.x;
+				short SH = 1000;
+				if (*depth_frame >= background_frame[pointId] - SH &&  *depth_frame <= background_frame[pointId] + SH)
+				{
+					rawDepth[x + y * noDims.x] = 0;
+					*depth_frame++;
+				}
+				else
+				{
+					rawDepth[x + y * noDims.x] = *depth_frame++;
+				}
+			}
+		}
+	}
+
 
 	for (int i = 0; i < rgbImage->noDims.x * 3 * rgbImage->noDims.y ; i+=3) {
 		Vector4u newPix;
@@ -121,6 +144,8 @@ void RealSenseEngine::getImages(ITMUChar4Image *rgbImage, ITMShortImage *rawDept
 
 bool RealSenseEngine::setBackground()
 {
+	if (!dataAvailable)	return false;
+
 	if (background_frame != NULL)
 		delete background_frame;
 	dataAvailable = false;
@@ -128,10 +153,13 @@ bool RealSenseEngine::setBackground()
 	// get frames
 	data->dev->wait_for_frames();
 	const uint16_t * depth_frame = reinterpret_cast<const uint16_t *>(data->dev->get_frame_data(rs::stream::depth));
-	int num = sizeof(depth_frame) / sizeof(uint16_t);
-	uint16_t* background_frame = new uint16_t(num);
+	int num = imageSize_d.x * imageSize_d.y;
+	
+	background_frame = new uint16_t[num];
+
 	for (int counter = 0; counter < num; counter++)
-		background_frame[counter] = depth_frame[counter];
+		background_frame[counter] = *depth_frame++;
+	dataAvailable = true;
 	return true;
 }
 

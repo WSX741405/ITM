@@ -1,9 +1,2 @@
-﻿  InfiniTAM.cpp
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include\cuda_runtime.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\cuda_runtime_api.h(1946): warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-d:\code\librealsense-master\include\librealsense\rs.h : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-     正在建立程式庫 C:/Users/MitLab/Desktop/InfiniTAM/build/Apps/InfiniTAM/Debug/InfiniTAM.lib 和物件 C:/Users/MitLab/Desktop/InfiniTAM/build/Apps/InfiniTAM/Debug/InfiniTAM.exp
-  InfiniTAM.vcxproj -> C:\Users\MitLab\Desktop\ITM\build\Apps\InfiniTAM\Debug\InfiniTAM.exe
-  InfiniTAM.vcxproj -> C:/Users/MitLab/Desktop/InfiniTAM/build/Apps/InfiniTAM/Debug/InfiniTAM.pdb (Full PDB)
+﻿  InfiniTAM.vcxproj -> C:\Users\MitLab\Desktop\InfiniTAM\build\Apps\InfiniTAM\Debug\InfiniTAM.exe
+  InfiniTAM.vcxproj -> Debug/InfiniTAM.pdb (Full PDB)

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/MitLab/Desktop/InfiniTAM/ORUtils
+# Install script for directory: C:/Users/MitLab/Desktop/ITM/ORUtils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

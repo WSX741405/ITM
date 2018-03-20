@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -56,7 +56,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\MitLab\Desktop\InfiniTAM\build\FernRelocLib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FernRelocLib.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FernRelocLib</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
@@ -120,7 +120,8 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -152,7 +153,8 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CMAKE=1;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_USE_MATH_DEFINES;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -203,70 +205,14 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/MitLab/Desktop/InfiniTAM/FernRelocLib/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-D:\Software\CMake\bin\cmake.exe -HC:/Users/MitLab/Desktop/InfiniTAM -BC:/Users/MitLab/Desktop/InfiniTAM/build --check-stamp-file C:/Users/MitLab/Desktop/InfiniTAM/build/FernRelocLib/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/MitLab/Desktop/InfiniTAM/FernRelocLib/CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\cmake\UseCUDA.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindCUDA.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindCUDA\select_compute_arch.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\UseOpenMP.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\SetCUDALibTarget.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\Flags.cmake;C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\MitLab\Desktop\InfiniTAM\build\FernRelocLib\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/MitLab/Desktop/InfiniTAM/FernRelocLib/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-D:\Software\CMake\bin\cmake.exe -HC:/Users/MitLab/Desktop/InfiniTAM -BC:/Users/MitLab/Desktop/InfiniTAM/build --check-stamp-file C:/Users/MitLab/Desktop/InfiniTAM/build/FernRelocLib/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/MitLab/Desktop/InfiniTAM/FernRelocLib/CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\cmake\UseCUDA.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindCUDA.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindCUDA\select_compute_arch.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\UseOpenMP.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\SetCUDALibTarget.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\Flags.cmake;C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\MitLab\Desktop\InfiniTAM\build\FernRelocLib\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/MitLab/Desktop/InfiniTAM/FernRelocLib/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-D:\Software\CMake\bin\cmake.exe -HC:/Users/MitLab/Desktop/InfiniTAM -BC:/Users/MitLab/Desktop/InfiniTAM/build --check-stamp-file C:/Users/MitLab/Desktop/InfiniTAM/build/FernRelocLib/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/MitLab/Desktop/InfiniTAM/FernRelocLib/CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\cmake\UseCUDA.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindCUDA.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindCUDA\select_compute_arch.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\UseOpenMP.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\SetCUDALibTarget.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\Flags.cmake;C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\MitLab\Desktop\InfiniTAM\build\FernRelocLib\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/MitLab/Desktop/InfiniTAM/FernRelocLib/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-D:\Software\CMake\bin\cmake.exe -HC:/Users/MitLab/Desktop/InfiniTAM -BC:/Users/MitLab/Desktop/InfiniTAM/build --check-stamp-file C:/Users/MitLab/Desktop/InfiniTAM/build/FernRelocLib/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/MitLab/Desktop/InfiniTAM/FernRelocLib/CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\CMakeLists.txt;C:\Users\MitLab\Desktop\InfiniTAM\cmake\UseCUDA.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindCUDA.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindPackageHandleStandardArgs.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindPackageMessage.cmake;D:\Software\CMake\share\cmake-3.9\Modules\FindCUDA\select_compute_arch.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\UseOpenMP.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\SetCUDALibTarget.cmake;C:\Users\MitLab\Desktop\InfiniTAM\cmake\Flags.cmake;C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\MitLab\Desktop\InfiniTAM\build\FernRelocLib\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\FernConservatory.cpp"  />
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\PoseDatabase.cpp"  />
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\RelocDatabase.cpp"  />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\FernConservatory.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\PixelUtils.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\PoseDatabase.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\RelocDatabase.h" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\FernRelocLib\Relocaliser.h" />
+    <ClCompile Include="..\..\FernRelocLib\FernConservatory.cpp" />
+    <ClCompile Include="..\..\FernRelocLib\PoseDatabase.cpp" />
+    <ClCompile Include="..\..\FernRelocLib\RelocDatabase.cpp" />
+    <ClInclude Include="..\..\FernRelocLib\FernConservatory.h" />
+    <ClInclude Include="..\..\FernRelocLib\PixelUtils.h" />
+    <ClInclude Include="..\..\FernRelocLib\PoseDatabase.h" />
+    <ClInclude Include="..\..\FernRelocLib\RelocDatabase.h" />
+    <ClInclude Include="..\..\FernRelocLib\Relocaliser.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\MitLab\Desktop\InfiniTAM\build\ZERO_CHECK.vcxproj">

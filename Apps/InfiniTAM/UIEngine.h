@@ -1,4 +1,4 @@
-// Copyright 2014-2017 Oxford University Innovation Limited and the authors of InfiniTAM
+// Copyright 2014-2017 Oxford University Innovation Limited and the authors of ITM
 
 #pragma once
 
@@ -12,7 +12,7 @@
 
 #include <vector>
 
-namespace InfiniTAM
+namespace ITM
 {
 	namespace Engine
 	{

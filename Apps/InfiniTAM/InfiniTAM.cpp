@@ -1,4 +1,4 @@
-// Copyright 2014-2017 Oxford University Innovation Limited and the authors of InfiniTAM
+// Copyright 2014-2017 Oxford University Innovation Limited and the authors of ITM
 
 #include <cstdlib>
 #include <iostream>
@@ -18,7 +18,7 @@
 #include "../../ITMLib/Core/ITMBasicSurfelEngine.h"
 #include "../../ITMLib/Core/ITMMultiEngine.h"
 
-using namespace InfiniTAM::Engine;
+using namespace ITM::Engine;
 using namespace InputSource;
 using namespace ITMLib;
 

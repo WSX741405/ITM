@@ -1,4 +1,4 @@
-// Copyright Oxford University Innovation Limited and the authors of InfiniTAM
+// Copyright Oxford University Innovation Limited and the authors of ITM
 
 #pragma once
 

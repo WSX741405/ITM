@@ -122,8 +122,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/MitLab/Desktop/InfiniTAM/build/Apps/InfiniTAM/Debug/InfiniTAM.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/MitLab/Desktop/InfiniTAM/build/Apps/InfiniTAM/Debug/InfiniTAM.pdb</ProgramDataBaseFile>
+      <ImportLibrary>Debug/InfiniTAM.lib</ImportLibrary>
+      <ProgramDataBaseFile>Debug/InfiniTAM.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -387,9 +387,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\Apps\InfiniTAM\InfiniTAM.cpp" />
-    <ClCompile Include="C:\Users\MitLab\Desktop\InfiniTAM\Apps\InfiniTAM\UIEngine.cpp" />
-    <ClInclude Include="C:\Users\MitLab\Desktop\InfiniTAM\Apps\InfiniTAM\UIEngine.h" />
+    <ClCompile Include="..\..\..\Apps\InfiniTAM\InfiniTAM.cpp" />
+    <ClCompile Include="..\..\..\Apps\InfiniTAM\UIEngine.cpp" />
+    <ClInclude Include="..\..\..\Apps\InfiniTAM\UIEngine.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\MitLab\Desktop\InfiniTAM\build\FernRelocLib\FernRelocLib.vcxproj">

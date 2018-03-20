@@ -1,4 +1,4 @@
-// InfiniTAM: Surffuse. Copyright (c) Torr Vision Group and the authors of InfiniTAM, 2016.
+// ITM: Surffuse. Copyright (c) Torr Vision Group and the authors of ITM, 2016.
 
 #include "ITMSurfelSceneReconstructionEngineFactory.h"
 

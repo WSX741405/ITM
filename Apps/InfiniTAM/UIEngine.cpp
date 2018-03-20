@@ -1,4 +1,4 @@
-// Copyright 2014-2017 Oxford University Innovation Limited and the authors of InfiniTAM
+// Copyright 2014-2017 Oxford University Innovation Limited and the authors of ITM
 
 #include "UIEngine.h"
 
@@ -25,7 +25,7 @@
 #include "../../ORUtils/FileUtils.h"
 #include "../../InputSource/FFMPEGWriter.h"
 
-using namespace InfiniTAM::Engine;
+using namespace ITM::Engine;
 using namespace InputSource;
 using namespace ITMLib;
 
@@ -66,7 +66,7 @@ void UIEngine::glutDisplayFunction()
 		{
 			glEnable(GL_TEXTURE_2D);
 			for (int w = 0; w < NUM_WIN; w++) {// Draw each sub window
-				if (uiEngine->outImageType[w] == ITMMainEngine::InfiniTAM_IMAGE_UNKNOWN) continue;
+				if (uiEngine->outImageType[w] == ITMMainEngine::ITM_IMAGE_UNKNOWN) continue;
 				glBindTexture(GL_TEXTURE_2D, uiEngine->textureId[w]);
 				glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, showImgs[w]->noDims.x, showImgs[w]->noDims.y, 0, GL_RGBA, GL_UNSIGNED_BYTE, showImgs[w]->GetData(MEMORYDEVICE_CPU));
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -192,15 +192,15 @@ void UIEngine::glutKeyUpFunction(unsigned char key, int x, int y)
 		uiEngine->currentColourMode = 0;
 		if (uiEngine->freeviewActive)
 		{
-			uiEngine->outImageType[0] = ITMMainEngine::InfiniTAM_IMAGE_SCENERAYCAST;
-			uiEngine->outImageType[1] = ITMMainEngine::InfiniTAM_IMAGE_ORIGINAL_DEPTH;
+			uiEngine->outImageType[0] = ITMMainEngine::ITM_IMAGE_SCENERAYCAST;
+			uiEngine->outImageType[1] = ITMMainEngine::ITM_IMAGE_ORIGINAL_DEPTH;
 
 			uiEngine->freeviewActive = false;
 		}
 		else
 		{
-			uiEngine->outImageType[0] = ITMMainEngine::InfiniTAM_IMAGE_FREECAMERA_SHADED;
-			uiEngine->outImageType[1] = ITMMainEngine::InfiniTAM_IMAGE_SCENERAYCAST;
+			uiEngine->outImageType[0] = ITMMainEngine::ITM_IMAGE_FREECAMERA_SHADED;
+			uiEngine->outImageType[1] = ITMMainEngine::ITM_IMAGE_SCENERAYCAST;
 
 			uiEngine->freeviewPose.SetFrom(uiEngine->mainEngine->GetTrackingState()->pose_d);
 			if (uiEngine->mainEngine->GetView() != NULL) {
@@ -233,7 +233,7 @@ void UIEngine::glutKeyUpFunction(unsigned char key, int x, int y)
 	case 'w':
 	{
 		printf("saving scene to model ...");
-		uiEngine->mainEngine->SaveSceneToMesh("mesh.stl");
+		uiEngine->mainEngine->SaveSceneToMesh("mesh.obj");
 		printf("done\n");
 		break;
 	}
@@ -515,14 +515,14 @@ void UIEngine::Initialise(int & argc, char** argv, ImageSourceEngine *imageSourc
 	this->freeviewActive = false;
 	this->integrationActive = true;
 	this->currentColourMode = 0;
-	this->colourModes_main.push_back(UIColourMode("shaded greyscale", ITMMainEngine::InfiniTAM_IMAGE_SCENERAYCAST));
-	this->colourModes_main.push_back(UIColourMode("integrated colours", ITMMainEngine::InfiniTAM_IMAGE_COLOUR_FROM_VOLUME));
-	this->colourModes_main.push_back(UIColourMode("surface normals", ITMMainEngine::InfiniTAM_IMAGE_COLOUR_FROM_NORMAL));
-	this->colourModes_main.push_back(UIColourMode("confidence", ITMMainEngine::InfiniTAM_IMAGE_COLOUR_FROM_CONFIDENCE));
-	this->colourModes_freeview.push_back(UIColourMode("shaded greyscale", ITMMainEngine::InfiniTAM_IMAGE_FREECAMERA_SHADED));
-	this->colourModes_freeview.push_back(UIColourMode("integrated colours", ITMMainEngine::InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_VOLUME));
-	this->colourModes_freeview.push_back(UIColourMode("surface normals", ITMMainEngine::InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_NORMAL));
-	this->colourModes_freeview.push_back(UIColourMode("confidence", ITMMainEngine::InfiniTAM_IMAGE_FREECAMERA_COLOUR_FROM_CONFIDENCE));
+	this->colourModes_main.push_back(UIColourMode("shaded greyscale", ITMMainEngine::ITM_IMAGE_SCENERAYCAST));
+	this->colourModes_main.push_back(UIColourMode("integrated colours", ITMMainEngine::ITM_IMAGE_COLOUR_FROM_VOLUME));
+	this->colourModes_main.push_back(UIColourMode("surface normals", ITMMainEngine::ITM_IMAGE_COLOUR_FROM_NORMAL));
+	this->colourModes_main.push_back(UIColourMode("confidence", ITMMainEngine::ITM_IMAGE_COLOUR_FROM_CONFIDENCE));
+	this->colourModes_freeview.push_back(UIColourMode("shaded greyscale", ITMMainEngine::ITM_IMAGE_FREECAMERA_SHADED));
+	this->colourModes_freeview.push_back(UIColourMode("integrated colours", ITMMainEngine::ITM_IMAGE_FREECAMERA_COLOUR_FROM_VOLUME));
+	this->colourModes_freeview.push_back(UIColourMode("surface normals", ITMMainEngine::ITM_IMAGE_FREECAMERA_COLOUR_FROM_NORMAL));
+	this->colourModes_freeview.push_back(UIColourMode("confidence", ITMMainEngine::ITM_IMAGE_FREECAMERA_COLOUR_FROM_CONFIDENCE));
 
 	this->imageSource = imageSource;
 	this->imuSource = imuSource;
@@ -562,7 +562,7 @@ void UIEngine::Initialise(int & argc, char** argv, ImageSourceEngine *imageSourc
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);
 	glutInitWindowSize(winSize.x, winSize.y);
-	glutCreateWindow("InfiniTAM");
+	glutCreateWindow("ITM");
 	glGenTextures(NUM_WIN, textureId);
 
 	glutDisplayFunc(UIEngine::glutDisplayFunction);
@@ -588,12 +588,12 @@ void UIEngine::Initialise(int & argc, char** argv, ImageSourceEngine *imageSourc
 
 	saveImage = new ITMUChar4Image(imageSource->getDepthImageSize(), true, false);
 
-	outImageType[0] = ITMMainEngine::InfiniTAM_IMAGE_SCENERAYCAST;
-	outImageType[1] = ITMMainEngine::InfiniTAM_IMAGE_ORIGINAL_DEPTH;
-	outImageType[2] = ITMMainEngine::InfiniTAM_IMAGE_ORIGINAL_RGB;
-	if (inputRGBImage->noDims == Vector2i(0, 0)) outImageType[2] = ITMMainEngine::InfiniTAM_IMAGE_UNKNOWN;
-	//outImageType[3] = ITMMainEngine::InfiniTAM_IMAGE_SCENERAYCAST;
-	//outImageType[4] = ITMMainEngine::InfiniTAM_IMAGE_SCENERAYCAST;
+	outImageType[0] = ITMMainEngine::ITM_IMAGE_SCENERAYCAST;
+	outImageType[1] = ITMMainEngine::ITM_IMAGE_ORIGINAL_DEPTH;
+	outImageType[2] = ITMMainEngine::ITM_IMAGE_ORIGINAL_RGB;
+	if (inputRGBImage->noDims == Vector2i(0, 0)) outImageType[2] = ITMMainEngine::ITM_IMAGE_UNKNOWN;
+	//outImageType[3] = ITMMainEngine::ITM_IMAGE_SCENERAYCAST;
+	//outImageType[4] = ITMMainEngine::ITM_IMAGE_SCENERAYCAST;
 
 	mainLoopAction = PROCESS_PAUSED;
 	mouseState = 0;

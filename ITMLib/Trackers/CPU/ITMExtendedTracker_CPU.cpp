@@ -1,4 +1,4 @@
-// Copyright 2014-2017 Oxford University Innovation Limited and the authors of InfiniTAM
+// Copyright 2014-2017 Oxford University Innovation Limited and the authors of ITM
 
 #include "ITMExtendedTracker_CPU.h"
 #include "../Shared/ITMExtendedTracker_Shared.h"

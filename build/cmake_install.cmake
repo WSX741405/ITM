@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/MitLab/Desktop/InfiniTAM
+# Install script for directory: C:/Users/MitLab/Desktop/ITM
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/InfiniTAM")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/ITM")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,12 +29,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/MitLab/Desktop/InfiniTAM/build/Apps/cmake_install.cmake")
-  include("C:/Users/MitLab/Desktop/InfiniTAM/build/FernRelocLib/cmake_install.cmake")
-  include("C:/Users/MitLab/Desktop/InfiniTAM/build/InputSource/cmake_install.cmake")
-  include("C:/Users/MitLab/Desktop/InfiniTAM/build/ITMLib/cmake_install.cmake")
-  include("C:/Users/MitLab/Desktop/InfiniTAM/build/MiniSlamGraphLib/cmake_install.cmake")
-  include("C:/Users/MitLab/Desktop/InfiniTAM/build/ORUtils/cmake_install.cmake")
+  include("C:/Users/MitLab/Desktop/ITM/build/Apps/cmake_install.cmake")
+  include("C:/Users/MitLab/Desktop/ITM/build/FernRelocLib/cmake_install.cmake")
+  include("C:/Users/MitLab/Desktop/ITM/build/InputSource/cmake_install.cmake")
+  include("C:/Users/MitLab/Desktop/ITM/build/ITMLib/cmake_install.cmake")
+  include("C:/Users/MitLab/Desktop/ITM/build/MiniSlamGraphLib/cmake_install.cmake")
+  include("C:/Users/MitLab/Desktop/ITM/build/ORUtils/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/MitLab/Desktop/InfiniTAM/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/MitLab/Desktop/ITM/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
